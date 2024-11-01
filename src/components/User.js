@@ -1,4 +1,8 @@
+import { useEffect } from "react";
+import { useFetcher } from "react-router-dom";
+
 const User = ({name}) => {
+
   return (
     <div className="user-card">
       <h3>Name:{name}</h3>
