@@ -35,6 +35,9 @@ const Header = () => {
             <li>
             <Link to ="/cart">Cart</Link>
             </li>
+            <li>
+            <Link to ="/grocery">Grocery</Link>
+            </li>
             <button className="login" onClick={()=>{
               btn ==="Login" ? setBtn("Logout"):setBtn("Login")
               console.log(btn);
