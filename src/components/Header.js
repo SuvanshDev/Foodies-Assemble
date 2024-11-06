@@ -13,15 +13,15 @@ const Header = () => {
     
   },[btn]);
     return (
-      <div className="header">
+      <div className="flex justify-between shadow-lg bg-orange-200">
         <div className="logo-container">
           <img
-            className="logo"
+            className="w-28"
             src={LOGO_URL}
           />
         </div>
-        <div className="nav-items">
-          <ul>
+        <div className="b flex items-center">
+          <ul className="flex p-4 m-4 space-x-8 items-center">
           <li>Online Status:{onlineStatus ? "✅":"🔴"}</li>
             <li>
            <Link to="/">Home</Link> 
