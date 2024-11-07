@@ -31,7 +31,7 @@ const Body = () => {
   return ListofRes.length === 0 ? (
     <Shimmer />
   ) : (
-    <div className="body">
+    <div className="body bg-gray-50">
       <div className=" m-8 flex items-center justify-center">
         <div className="">
           <input
