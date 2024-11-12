@@ -1,7 +1,6 @@
 import Shimmer from "./Shimmer";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utils/useRestaurantMenu";
-// import { CDN_URL } from '../utils/constant';
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
@@ -10,19 +9,8 @@ const RestaurantMenu = () => {
     return <Shimmer />;
   }
 
-  const {
-    name,
-    cuisines,
-    costForTwoMessage,
-    areaName,
-    totalRatingsString,
-    avgRating,
-    cloudinaryImageId,
-  } = resInfo?.cards[2]?.card?.card?.info;
-  console.log(
-    "resInfo?.cards[2]?.card?.card?.info ",
-    resInfo?.cards[2]?.card?.card?.info
-  );
+  const { name, cuisines, costForTwoMessage,areaName,avgRating,totalRatingsString } =
+    resInfo?.cards[2]?.card?.card?.info;
   const itemCards =
     resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card
       ?.itemCards;
@@ -50,7 +38,7 @@ const RestaurantMenu = () => {
         </div>
       </div>
 
-      <div className="bg-yellow-300 m-2 p-2 w-[900px]">
+      <div className=" m-2 p-2 w-[900px]">
         <h2>Menu</h2>
         <ul>
           {itemCards.map((item) => (
