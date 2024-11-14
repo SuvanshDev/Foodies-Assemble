@@ -13,9 +13,19 @@ class AboutClass extends React.Component {
     // console.log('Parent Render');
     return (
       <>
-        <h1>About Us</h1>
-        <h2>lorem ipsum lodor</h2>
+        <div>
+        <h1 className="font-semibold m-4 text-lg">About Us</h1>
+        <p>Foodies is a food ordering web application built with React.js and Swiggy's API.</p>
+          <p>Frontend Library: React JS</p>
+          <p>Bundler: Parcel</p>
+          <p>Styling: Tailwind CSS</p>
+          <p>Testing: Jest</p>
+          <p>State Management: Redux-toolkit</p>
+        </div>
+        <div className="m-8">
         <UserClass name={"Sg-classs"} />
+
+        </div>
       </>
     );
   }
