@@ -36,7 +36,7 @@ const Body = () => {
         <div className="">
           <input
             type="text"
-            className="border border-black border-solid rounded-md"
+            className="border border-black border-solid rounded-md w-96"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);

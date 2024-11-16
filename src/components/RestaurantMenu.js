@@ -38,7 +38,7 @@ const RestaurantMenu = () => {
         </div>
       </div>
 
-      <div className=" m-2 p-2 w-[900px]">
+      <div className=" m-2 p-2 w-[900px] shadow-lg">
         <h2>Menu</h2>
         <ul>
           {itemCards.map((item) => (
